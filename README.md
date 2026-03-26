@@ -1,6 +1,6 @@
 ## My Guitar Shop Assignments
 
-This repository contains SQL assignments for the **My Guitar Shop** database, covering Modules 1 through 8 for [your course name or code]. 
+This repository contains SQL assignments for the **My Guitar Shop** database, covering Modules 1 through 8 for Database Management. 
 
 Each module focuses on creating, querying, and analyzing data in the `my_guitar_shop` MySQL database, helping you practice SQL commands, database design, and reporting. Note that there is no module 7 as the extra week was purposed to work on the portfolio project.
 
