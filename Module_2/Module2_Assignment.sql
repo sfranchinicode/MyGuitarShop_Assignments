@@ -6,7 +6,7 @@ FROM products;
 
 -- 2. Run a SELECT statment to retrieve full customer names
 SELECT CONCAT(last_name, ', ', first_name) AS full_name
-FROM customer
+FROM customers
 WHERE last_name >= 'M'
 ORDER BY last_name ASC;
 
