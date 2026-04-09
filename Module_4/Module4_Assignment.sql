@@ -23,7 +23,7 @@ SELECT *
 FROM categories
 WHERE category_id = '5'; 
 
--- 3. Delete the Catergory Row
+-- 3. Delete the Category Row
 SELECT category_id, category_name
 FROM categories
 WHERE category_name = 'Woodwinds';
@@ -38,11 +38,11 @@ WHERE category_id = '5';
 
 -- 4. Insert a New Product
 INSERT INTO products
-(category_id, product_code, product_name, description, list_prince, discount_percent, date_added)
+(category_id, product_code, product_name, description, list_price, discount_percent, date_added)
 VALUES
 (4, 'dgx-640', 'Yamaha DGX 640 88-Key Digital Piano', 'Long description to come', 799.99, 0, NOW());
 
 --Verify it worked
 SELECT product_id, product_name
 FROM products
-WHERE product_code = 'dgx_640';
+WHERE product_code = 'dgx-640';
