@@ -16,12 +16,12 @@ WHERE category_name = 'Brass';
 
 UPDATE categories
 SET category_name = 'Woodwinds'
-WHERE category_id = '?'; -- FIXME find the category and input here
+WHERE category_id = '5'; 
 
 -- Verify it worked
 SELECT *
 FROM categories
-WHERE category_id = '?'; -- FIXME input the category id
+WHERE category_id = '5'; 
 
 -- 3. Delete the Catergory Row
 SELECT category_id, category_name
@@ -29,12 +29,12 @@ FROM categories
 WHERE category_name = 'Woodwinds';
 
 DELETE FROM categories
-WHERE category_id = '?';
+WHERE category_id = '5';
 
 --Verify it worked
 SELECT *
 FROM categories
-WHERE category_id = '?';
+WHERE category_id = '5';
 
 -- 4. Insert a New Product
 INSERT INTO products
