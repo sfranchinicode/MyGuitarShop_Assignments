@@ -1,7 +1,7 @@
 # Module 3: Using Joins in My Guitar Shop Database
 
 ## Objective
-This module demonstrates how to use SQL joins to retrieve related data from multiple tables in hte My Guitar Shop database.
+This module demonstrates how to use SQL joins to retrieve related data from multiple tables in the My Guitar Shop database.
 The tasks include joining categories and products, retrieving customer addresses, filtering shipping addresses and joining multiple tables to view order details using aliases. 
 
 ## Prerequisites
