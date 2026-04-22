@@ -13,19 +13,19 @@ BEGIN
 END
 
 // 
-DELIMITER;
+DELIMITER ;
 
 -- Test procedure with different values
 CALL insert_category('Guitar Accessories');
-CAL insert_category('Sheet Music');
+CALL insert_category('Sheet Music');
 
 -- 2. Create and Call the "discount_price" Stored Procedure
 DELIMITER //
 
-CREATE FUNCTION discount_price()(
+CREATE FUNCTION discount_price(
     p_item_id INT  -- Input item ID to look up
 )
-RETURNS DECIMAL(10,2);
+RETURNS DECIMAL(10,2)
 READS SQL DATA  -- indicates the function reads table data
 BEGIN
     DECLARE v_discount_price DECIMAL(10,2);
@@ -39,7 +39,7 @@ BEGIN
 END 
 
 //
-DELIMITER;
+DELIMITER ;
 
 -- Test the function
 SELECT discount_price(1);
@@ -53,7 +53,7 @@ CREATE FUNCTION item_total(
 RETURNS DECIMAL(10,2)
 READS SQL DATA
 BEGIN
-    DECLARE v-total DECIMAL(10,2);
+    DECLARE v_total DECIMAL(10,2);
     DECLARE v_quantity INT;
     DECLARE v_discount_price DECIMAL(10,2);
 
@@ -73,7 +73,7 @@ BEGIN
 END
 
 //
-DELIMITER
+DELIMITER ;
 
 -- Test the function
 SELECT item_total(1);
