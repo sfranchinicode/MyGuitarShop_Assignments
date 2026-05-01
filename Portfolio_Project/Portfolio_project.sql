@@ -5,8 +5,8 @@ SELECT
     product_name,
     list_price,
     discount_percent,
-    ROUNDED(list_price * (discount_percent / 100), 2) AS discount_amount,
-    ROUNDED(list_price - (discount_percent / 100), 2) AS discount_price
+    ROUND(list_price * (discount_percent / 100), 2) AS discount_amount,
+    ROUND(list_price - (discount_percent / 100), 2) AS discount_price
 FROM 
     Products
 ORDER BY 
