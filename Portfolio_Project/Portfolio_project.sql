@@ -6,7 +6,7 @@ SELECT
     list_price,
     discount_percent,
     ROUNDED(list_price * (discount_percent / 100), 2) AS discount_amount,
-    ROUNDED(list price - (discount_percent / 100), 2) AS discount_price
+    ROUNDED(list_price - (discount_percent / 100), 2) AS discount_price
 FROM 
     Products
 ORDER BY 
@@ -60,7 +60,7 @@ INSERT INTO Customers (
     email_address,
     password,
     first_name,
-    last_name,
+    last_name
 )
 VALUES (
     'rick@raven.com',
