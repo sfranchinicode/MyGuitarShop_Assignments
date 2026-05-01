@@ -53,7 +53,7 @@ LEFT JOIN
     Products p 
     ON c.category_id = p.product_id
 WHERE 
-    p.product_id = IS NULL;
+    p.product_id IS NULL;
 
 -- 5. Insert a New Customer
 INSERT INTO Customers (
@@ -106,15 +106,15 @@ GROUP BY
 CREATE USER 
     'sfranchini'@'%' IDENTIFIED BY 'myUNIQUEpassword123!';
 GRANT SELECT, INSERT, UPDATE, DELETE
-    ON MyGuitarShop.Customers TO 'sfranchini'@'%';
+    ON my_guitar_shop.Customers TO 'sfranchini'@'%';
 GRANT SELECT, INSERT, UPDATE, DELETE
-    ON MyGuitarShop.Addresses TO 'sfranchini'@'%';
+    ON my_guitar_shop.Addresses TO 'sfranchini'@'%';
 GRANT SELECT, INSERT, UPDATE, DELETE
-    ON MyGuitarShop.Orders TO 'sfranchini'@'%';    
+    ON my_guitar_shop.Orders TO 'sfranchini'@'%';    
 GRANT SELECT, INSERT, UPDATE, DELETE
-    ON MyGuitarShop.Order_Items TO 'sfranchini'@'%';
+    ON my_guitar_shop.Order_Items TO 'sfranchini'@'%';
 GRANT SELECT
-    ON MyGuitarShop.Products TO 'sfranchini'@'%';
+    ON my_guitar_shop.Products TO 'sfranchini'@'%';
 GRANT SELECT
-    ON MyGuitarShop.Categories TO 'sfranchini'@'%';
+    ON my_guitar_shop.Categories TO 'sfranchini'@'%';
 SHOW GRANTS FOR 'sfranchini'@'%';
